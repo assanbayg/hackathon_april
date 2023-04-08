@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/search_card.dart';
-import '../widgets/course_card.dart';
+import '../widgets/subject_card.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -24,15 +24,15 @@ class SearchScreen extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      CourseCard(
+                      SubjectCard(
                         color: Colors.blue,
                         subjectName: 'ICT',
                       ),
-                      CourseCard(
+                      SubjectCard(
                         color: Colors.purple,
                         subjectName: 'Chemistry',
                       ),
-                      CourseCard(
+                      SubjectCard(
                         color: Colors.green,
                         subjectName: 'Biology',
                       ),
@@ -40,15 +40,15 @@ class SearchScreen extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      CourseCard(
+                      SubjectCard(
                         color: Colors.indigo,
                         subjectName: 'Physics',
                       ),
-                      CourseCard(
+                      SubjectCard(
                         color: Colors.orange,
                         subjectName: 'Kazakh History',
                       ),
-                      CourseCard(
+                      SubjectCard(
                         color: Colors.red,
                         subjectName: 'World History',
                       ),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../widgets/my_drawer.dart';
 
-import './home_screen.dart';
 import './search_screen.dart';
 import './favourite_screen.dart';
 import './prize_screen.dart';

@@ -51,11 +51,10 @@ ThemeData basisTheme() => ThemeData(
       ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-          foregroundColor: textColor,
+          foregroundColor: Colors.white,
           textStyle: const TextStyle(
             fontFamily: fontNameDefault,
             fontSize: 15,
-            decoration: TextDecoration.underline,
           ),
         ),
       ),

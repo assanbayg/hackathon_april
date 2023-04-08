@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -32,6 +33,18 @@ class MyDrawer extends StatelessWidget {
           ),
           const Divider(thickness: 2),
           buildListTile('Notifications', Icons.notifications_rounded, () {}),
+          buildListTile(
+            'Telegram',
+            Icons.telegram_rounded,
+            () async {
+              final Uri _url = Uri.parse('https://flutter.dev');
+
+              if (!await launchUrl(_url)) {
+                throw Exception('Could not launch $_url');
+              }
+            },
+          ),
+          buildListTile('Settings', Icons.settings_rounded, () => null)
         ]),
       ),
     );
